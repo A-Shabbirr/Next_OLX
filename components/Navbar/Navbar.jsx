@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import styles from "./Navbar.module.css";
-import SearchBar from "./components/searchbar";
+import SearchBar from "./components/SearchBar";
 import Login from "./components/Login";
 import { useState, useEffect } from 'react';
 import Link from "next/link";
