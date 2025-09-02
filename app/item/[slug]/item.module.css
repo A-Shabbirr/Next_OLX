@@ -1,0 +1,407 @@
+.item_main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.item_div {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    padding: 20px;
+}
+
+.item_div_right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* background-color: yellow; */
+}
+
+.item_div_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: orange; */
+    width: 65%;
+}
+
+.item_div_left_image {
+    background: white;
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.item_left_first {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+
+}
+
+.item_price_title {
+    width: 90%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+
+}
+
+.item_price {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.item_icon {
+    width: 10%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+
+}
+
+.item_details {
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.item_d_box {
+    background-color: lightgray;
+}
+
+.item_d_h {
+    margin-bottom: 20px;
+}
+
+.item_d__box {
+    background-color: rgb(247, 231, 231);
+    margin-left: 50px;
+}
+
+.item_d_details {
+    display: grid;
+    /* background-color: red; */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.item_d_details_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: aqua; */
+
+
+}
+
+.item_left_second {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: gray;
+    font-size: 18px;
+    /* align-items: center; */
+
+}
+
+.Details_API_rest_FirstHalf {
+    width: 100%;
+    /* background-color: violet; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Details_API_rest_Name {
+    height: 80px;
+    border-radius: 10px;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.API_First_profile {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    /* background-color: red; */
+}
+
+.profile_pic {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.API_First {
+    width: 50%;
+    /* background-color: blueviolet; */
+}
+
+.arrow_item {
+    width: 20%;
+    /* height: 10%; */
+    /* background-color: lightblue; */
+}
+
+.Details_API_rest_border {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+
+.border_line {
+    width: 100%;
+}
+
+.Details_API_rest_Date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.Date_Left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    /* background-color: red; */
+}
+
+.Date_Right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    /* background-color: red; */
+}
+
+.Details_API_rest_Date_Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal;
+    /* height: 20px; */
+    width: 100%;
+    gap: 10px;
+    /* margin-left: 10px; */
+    /* background-color: orange; */
+}
+
+.API_date {
+    /* background-color: blue; */
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+/* 
+.API-Name {
+    background-color: yellow;
+
+} */
+
+.Details_API_rest_Date_Right {
+    /* margin-left: 10px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: normal;
+    /* background-color: orange; */
+    width: 60%;
+}
+
+.SVG {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background-color: lightblue;
+}
+
+.Details_API_rest_Button {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.call_button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.call_Button_heading {
+    margin-left: 10px;
+    /* margin-top: 5px; */
+}
+
+.chat_button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.Details_API_rest_ID {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.flag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: burlywood; */
+}
+
+.API_Flag {
+    margin-left: 10px;
+}
+
+.API_Details_Bottom {
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.API_Bottom_Child {
+    margin-top: 50px;
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: red; */
+
+}
+
+.Price_API {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+}
+
+.Price_API_Left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* background-color: orange; */
+    /* width: 50%; */
+}
+
+.price_heading {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.Price_API_Right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: blue; */
+    width: 10%;
+}
+
+.safety {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    /* background-color: red; */
+    margin: 20px 0px;
+}
+
+.item_list {
+    margin-top: 10px;
+    padding-left: 20px;
+    /* background-color: yellow; */
+}
+
+.item_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.Sim_div {
+    /* background-color: red; */
+    margin-left: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+}

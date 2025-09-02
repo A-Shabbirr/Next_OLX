@@ -1,0 +1,136 @@
+.PV {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.api_cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    padding-right: 30px;
+}
+
+.child_top {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.child_image {
+    height: 100%;
+    width: 30%;
+    padding: 10px;
+    background-color: white;
+}
+
+.child_detail {
+    height: -webkit-fill-available;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    /* background-color: aqua; */
+}
+
+.child {
+    /* background-color: orange; */
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+.desc {
+    margin-bottom: 20px;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.h_title {
+    font-size: 20px;
+    font-weight: 700;
+    /* background-color: red; */
+}
+
+.child_end {
+    width: 25%;
+    /* background-color: orange; */
+}
+
+.child {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: green; */
+}
+
+.chatt_call {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    /* background-color: greenyellow; */
+}
+
+.chat {
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(39, 38, 38);
+}
+
+.call {
+    border-radius: 5px;
+    height: 40px;
+    background-color: lightgrey;
+    width: 100px;
+}
+
+.h_desc {
+    margin: 10px 0px;
+}
+
+.h_para {
+    margin: 10px 0px;
+}
+
+.h_and_p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.heart_cat {
+    /* width: 100%; */
+    /* background-color: red; */
+    position: relative;
+    top: 58px;
+    left: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}

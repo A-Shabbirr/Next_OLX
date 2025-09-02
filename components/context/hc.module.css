@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     width: 100%;
+    min-width: 1000px;
     /* background-color: yellow; */
     display: flex;
     flex-direction: column;
@@ -62,7 +63,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 30%;
+    width: 300px;
     padding: 10px;
     /* background-color: yellow; */
 }
@@ -96,7 +97,8 @@
     /* align-items: center; */
     /* background-color: red; */
 }
-.main_heart{
+
+.main_heart {
     position: relative;
     top: 280px;
     right: -120px;

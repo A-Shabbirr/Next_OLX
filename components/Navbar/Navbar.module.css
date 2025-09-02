@@ -1,0 +1,365 @@
+.navbar_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    /* align-items: flex-start; */
+}
+
+.navbar {
+    /* margin-bottom: 500px; */
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: red; */
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+}
+
+.main {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(241, 241, 250);
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    /* background-color: yellow; */
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    /* background-color: red; */
+}
+
+.olx_heading {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.motor,
+.property {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+.motor_heading,
+.house_heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: gray;
+}
+
+.car,
+.house {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.login_heading {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.sell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 80px;
+    border: 3px solid black;
+    text-align: center;
+    border-radius: 30px;
+
+}
+
+.sell_heading {
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.searchbox {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    /* align-items: center; */
+}
+
+.first {
+    /* background-color: greenyellow; */
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.second {
+    /* background-color: greenyellow; */
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.first_search {
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.first_search::placeholder {
+    font-style: 20px;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.second_search {
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.second_search:focus {
+    border-color: none;
+    outline: none;
+    box-shadow: 0 0 0 2px none;
+    font-size: 16px;
+}
+
+.first_search:focus {
+    border-color: none;
+    outline: none;
+    box-shadow: 0 0 0 2px none;
+    font-size: 16px;
+}
+
+.search_svg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    background-color: rgb(80, 77, 77);
+    width: 120px;
+    height: 100%;
+}
+
+.search_svg:hover {
+    cursor: pointer;
+}
+
+.search_heading {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.span {
+    margin-top: 10px;
+    height: 1px;
+    width: 100%;
+    background-color: silver;
+}
+
+.Navbar_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    /* position: relative; */
+    /* top: 150px; */
+}
+
+.nav_image {
+    /* background-color: red; */
+    margin-top: 10px;
+    width: 90%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.nav_image {
+    /* background-color: red; */
+    margin-top: 10px;
+    width: 90%;
+    height: 180px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    /* opacity: 0; */
+    transition: opacity 2s ease;
+}
+
+.image.show {
+    opacity: 1;
+    animation: slideInRight 2s forwards;
+}
+
+.image.hide {
+    opacity: 0;
+    animation: slideOutLeft 2s forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+.nav_cat {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+    gap: 30px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.cat_icon_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: yellow; */
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.cat_icon {
+    padding: 10px;
+    background-color: rgb(218, 218, 231);
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.icon_para {
+    font-size: 13px;
+    font-weight: 800;
+    text-align: center;
+    width: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.nav_menu {
+    margin: 20px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* background-color: red; */
+    width: 100%;
+}
+
+.content {
+    width: 60%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.ac {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.github {
+    border-radius: 50px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.github_signin {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(62, 62, 247);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.github_signout {
+    border: none;
+    width: 90px;
+    height: 40px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}

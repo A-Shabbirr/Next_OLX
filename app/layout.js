@@ -1,5 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navbar from '@/components/Navbar/Navbar';
+import Footer from "@/components/Footer/Footer";
+import { LikedItemProvider } from "@/components/context/LikedItemContext";
+import { DataProvider } from "@/components/lib/allData";
+import SessionWrapper from "./components/SessionWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,9 +24,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
-      </body>
+      <SessionWrapper>
+        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+          <DataProvider>
+            <Navbar />
+            <LikedItemProvider>
+              <div className="children-wrapper">
+                {children}
+              </div>
+            </LikedItemProvider>
+            <Footer />
+          </DataProvider>
+        </body>
+      </SessionWrapper>
     </html>
   );
 }

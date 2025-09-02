@@ -1,0 +1,171 @@
+.similar_ads {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    /* background: red; */
+    margin: 30px 0px;
+    position: relative;
+}
+
+.Car_List_below_Heading {
+    /* background-color: yellow; */
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.Similar_cars_Example {
+    margin-top: 10px;
+    padding: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.Similar_cars_Example:hover {
+    cursor: pointer;
+}
+
+.similar_Cars_List {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    width: 260px;
+    height: 350px;
+}
+
+.similar_Cars_List_img {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.pic-Similar {
+    width: 80%;
+    height: 80%;
+}
+
+.similar_Cars_List_rest {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* margin-bottom: 5px; */
+    /* background-color: red; */
+}
+
+.rest_heading {
+    /* background-color: red; */
+    font-size: 18px;
+    /* color: gray; */
+    margin: 10px 0px;
+}
+
+.price_SVG {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third_Line_mobile {
+    /* height: 60px; */
+    /* background-color: red; */
+    margin-bottom: 0px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.address {
+    padding: 0;
+    font-size: 15px;
+    color: gray;
+    margin: 10px 0px;
+}
+
+.Third_heading_mobile {
+    font-size: 18px;
+    color: gray;
+}
+
+.Time {
+    font-size: 14px;
+    color: gray;
+    /* background-color: red; */
+    /* margin: 20px 0px; */
+    margin-bottom: 20px;
+}
+
+.heart_div {
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    top: 54%;
+    right: 14%;
+}
+
+.heart:hover {
+    cursor: pointer;
+}
+
+.Second_heading_mobile {
+    /* background-color: red; */
+    font-size: 14px;
+}
+
+.backward {
+    z-index: 2;
+    position: absolute;
+    top: 230px;
+    left: -35px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forward {
+    z-index: 2;
+    position: absolute;
+    top: 230px;
+    right: -5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forward:hover,
+.backward:hover {
+    cursor: pointer;
+}
+
+.Similar_hearts {
+    position: absolute;
+    top: 190px;
+    right: 50px;
+    /* background-color: red; */
+}
