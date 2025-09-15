@@ -1,6 +1,7 @@
 'use client'
 import React, { useContext } from 'react';
 import { useLiked } from '../context/LikedItemContext';
+import styles from '@/app/page.module.css';
 
 
 const heart = ({ productId }) => {
@@ -24,18 +25,7 @@ const heart = ({ productId }) => {
         <div >
             <button
                 onClick={() => toggleLike(productId)}
-                style={{
-                    border: 'none',
-                    background: 'transparent',
-                    cursor: 'pointer',
-                    width: '32px',
-                    height: '32px',
-                    fontSize: '24px',
-                    padding: 0,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                }}
+                className={styles.heart_icon}
             >
                 {isLiked ? '❤️' : '🤍'}
             </button>

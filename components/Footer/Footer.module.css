@@ -2,6 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: red; */
+}
+
+.footer_top {
+    order: 1;
+}
+
+.footer_mid {
+    order: 2;
+}
+
+.footer_bottom {
+    order: 3;
+}
+
+.footer_final {
+    order: 4;
 }
 
 .footer_top {
@@ -15,7 +32,7 @@
 
 .footer_mid {
     height: 1px;
-    background-color: grey;
+    background-color: rgb(177, 175, 175);
 }
 
 .footer_bottom {
@@ -25,7 +42,7 @@
     padding-bottom: 50px;
     width: 100%;
     background-color: rgb(241, 236, 236);
-    /* background-color: silver; */
+    /* background-color: red; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,7 +51,7 @@
 
 .footer_first {
     /* background-color: red; */
-    width: 30%;
+    width: 25%;
 }
 
 .heading_two {
@@ -44,7 +61,7 @@
 .footer_second {
     /* background-color: red; */
     text-align: center;
-    width: 30%;
+    width: 25%;
 }
 
 .footer_third {
@@ -91,7 +108,7 @@
 }
 
 .bottom_five {
-    width: 20%;
+    width: 25%;
 }
 
 .bottom_button {
@@ -99,7 +116,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
     /* background-color: yellow; */
 }
 
@@ -114,26 +131,47 @@
     border: 1px solid rgb(163, 161, 161);
 }
 
-.bottom_heading {
+.bottom_heading,
+.bottom_heading5 {
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 20px;
+    /* background-color: red; */
 }
+
 
 .bottom_first,
 .bottom_two,
 .bottom_three,
-.bottom_four,
-.bottom_five {
-
+.bottom_four {
+    gap: 15px;
+    height: 200px;
+    /* background-color: yellow; */
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 15px;
-    height: 200px;
-    /* background-color: yellow; */
+    width: 21%;
 }
+
+
+.footer_four {
+    display: none;
+}
+
+.bottom_five {
+    gap: 15px;
+    width: 19%;
+    height: 200px;
+    /* background-color: orange; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 
 .para {
     color: rgb(49, 44, 44);
@@ -151,4 +189,231 @@
 .final_heading {
     font-size: 15px;
     font-weight: 700;
+}
+
+.bottom_button_res,
+.social_button_res {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .bottom_heading5 {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_mid {
+        display: none;
+    }
+
+    .footer_bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        /* background-color: red; */
+        margin: 0;
+        padding: 0;
+    }
+
+    .bottom_five {
+        display: none;
+    }
+
+    .bottom_button_res {
+        display: flex;
+        /* background-color: yellow; */
+        flex-direction: row;
+        justify-content: space-between;
+        width: 45%;
+        align-items: center;
+    }
+
+
+    .social_button_res {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid gray;
+        height: 35px;
+        width: 35px;
+        border-radius: 35px;
+    }
+
+    .social_button {
+        display: none;
+    }
+
+    .footer_final {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100px;
+        padding-top: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        gap: 20px;
+        /* background-color: yellow; */
+    }
+
+    .final_heading {
+        font-size: 10px;
+    }
+
+    .para {
+        /* background-color: yellow; */
+        display: none;
+    }
+
+    .bottom_first,
+    .bottom_two,
+    .bottom_three,
+    .bottom_four {
+        border-top: 1px solid silver;
+        width: 100%;
+        height: 55px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* align-items: center; */
+        /* background-color: yellow; */
+        margin: 0;
+    }
+
+    .bottom_four {
+        border-bottom: 1px solid silver;
+    }
+
+    .bottom_heading {
+        /* background-color: tan; */
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    .footer_first,
+    .footer_second,
+    .footer_third {
+        display: none;
+    }
+
+    .footer_four {
+        background-color: rgb(241, 236, 236);
+        width: 100%;
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .four_two {
+        width: 50%;
+
+    }
+
+    .bottom_five_res {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+    .four_one {
+        width: 50%;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .footer_four_pic {
+        height: 100%;
+        width: 100%;
+    }
+
+    .button_res {
+        background-color: black;
+        width: 110px;
+        border-radius: 5px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    .button_svg_res {
+        width: 30px;
+        height: 15px;
+    }
+
+    .heading_div {
+        /* background-color: yellow; */
+        display: flex;
+        justify-self: flex-start;
+    }
+
+    .heading_res_1 {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .heading_res {
+        margin: 10px 0px;
+        font-size: 8px;
+        max-width: 70px;
+        font-weight: normal;
+        color: black;
+        /* background-color: red; */
+    }
+
+    .button_heading_res {
+        font-size: 7px;
+        font-weight: normal;
+        color: white;
+        /* background-color: red; */
+    }
+
+    .heading_app_res {
+        font-size: 10px;
+        font-weight: 600;
+        color: white;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer_top {
+        order: 2;
+    }
+
+    .footer_mid {
+        order: 3;
+    }
+
+    .footer_bottom {
+        order: 1;
+    }
+
+    .footer_final {
+        order: 4;
+    }
+
 }

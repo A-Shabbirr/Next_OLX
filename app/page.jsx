@@ -48,7 +48,7 @@ export default async function Home() {
                 {products && products.slice(0, 4).map((product) =>
                   <div className={styles.api_list} key={product.id}>
                     <div className={styles.main_heart} >
-                      <Heart productId={product.id} />
+                      <Heart className={styles.heart_icon} productId={product.id} />
                     </div>
                     <Link
                       href={{
@@ -57,7 +57,7 @@ export default async function Home() {
                     >
                       <div className={styles.api_image}>
                         {product.images &&
-                          <Image src={product.images[0]} width={250} height={250} alt="description" loading="lazy"></Image>
+                          <Image className={styles.image_res} src={product.images[0]} width={250} height={250} alt="description" loading="lazy"></Image>
                         }
                       </div>
                       <div className={styles.api_list_detail}>
@@ -66,7 +66,7 @@ export default async function Home() {
                             $ {product.price}
                           </h6>
                         </div>
-                        <p>
+                        <p className={styles.api_title}>
                           {product.title}
                         </p>
                         <p className={styles.api_rating1}>
@@ -84,7 +84,7 @@ export default async function Home() {
           )
         )
       }
-      <div>
+      <div className={styles.liked_products}>
         <HomeClient allProducts={allProducts} categorizedProducts={categorizedProducts} />
       </div>
     </div >

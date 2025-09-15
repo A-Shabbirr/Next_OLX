@@ -65,70 +65,84 @@ export default function ItemsPage() {
   return (
     <div className={styles.PV}>
       <div className={styles.child_top}>
-        <h1>search Results for {q} : {FilteredArray.length}</h1>
-        {currentItems && currentItems.map((item) => (
-          <div className={styles.api_cat} key={item.id}>
-            <div className={styles.heart_cat} key={item.id}>
-              <Heart productId={item.id} />
-            </div>
-            <div className={styles.api_ind}>
-              <Link
-                href={{
-                  pathname: `/item/${item.title.replace(/\s+/g, '-').toLowerCase()}-id-${item.id}`
-                }}
-                className={styles.child} key={item.id}>
-                <div className={styles.child_image}>
-                  {item.images &&
-                    <Image src={item.images[0]} width={250} height={250} alt="description"></Image>
-                  }
-                </div>
-                <div className={styles.child_detail}>
-                  <div className={styles.desc}>
-                    <div>
-                      <div className={styles.h_and_p}>
-                        <h6 className={styles.h_title}>
-                          $ {item.price}
-                        </h6>
+        <div className={styles.child_top_top}>
+          <h3 className={styles.child_top_heading}>Search Results for <strong>"{q}"</strong> : {FilteredArray.length} items</h3>
+          {currentItems && currentItems.map((item) => (
+            <div className={styles.api_cat} key={item.id}>
+              <div className={styles.heart_cat} key={item.id}>
+                <Heart productId={item.id} />
+              </div>
+              <div className={styles.api_ind}>
+                <Link
+                  href={{
+                    pathname: `/item/${item.title.replace(/\s+/g, '-').toLowerCase()}-id-${item.id}`
+                  }}
+                  className={styles.child} key={item.id}>
+                  <div className={styles.child_image}>
+                    {item.images &&
+                      <Image src={item.images[0]} width={250} height={250} alt="description"></Image>
+                    }
+                  </div>
+                  <div className={styles.child_detail}>
+                    <div className={styles.desc}>
+                      <div>
+                        <div className={styles.h_and_p}>
+                          <h6 className={styles.h_title}>
+                            $ {item.price}
+                          </h6>
+                        </div>
+                        <p className={styles.h_para}>
+                          {item.title}
+                        </p>
+                        <p className={styles.h_desc}>
+                          {item.description}
+                        </p>
                       </div>
-                      <p className={styles.h_para}>
-                        {item.title}
-                      </p>
-                      <p className={styles.h_desc}>
-                        {item.description}
-                      </p>
+                      <div>
+                        <p className={styles.h_para}>
+                          Manufacturer: {item.brand ? item.brand : 'Made Locally'}
+                        </p>
+                        <p className={styles.h_para}>
+                          Id: {item.id}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <p className={styles.h_para}>
-                        Manufacturer: {item.brand ? item.brand : 'Made Locally'}
-                      </p>
-                      <p className={styles.h_para}>
-                        Id: {item.id}
-                      </p>
+                    <div className={styles.chatt_call}>
+                      <button className={styles.call}>
+                        <h4>
+                          Call
+                        </h4>
+                      </button>
+                      <button className={styles.chat}>
+                        <h4>
+                          Chat
+                        </h4>
+                      </button>
                     </div>
                   </div>
-                  <div className={styles.chatt_call}>
-                    <button className={styles.call}>Call</button>
-                    <button className={styles.chat}>Chat</button>
-                  </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
-          </div>
-        ))
-        }
+          ))
+          }
+        </div>
         <div className={styles.pagination}>
-          <button onClick={handlePrevPage} disabled={currentPage === 1}>
-            Previous
+          <button
+            className={styles.p_B_button}
+            onClick={handlePrevPage} disabled={currentPage === 1}>
+            <h4>Previous</h4>
           </button>
-          <span>Page {currentPage} of {totalPages}</span>
-          <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-            Next
+          <span>Page <strong className={styles.pages_number}>{currentPage}</strong> of <strong className={styles.pages_number}>{totalPages}</strong></span>
+          <button
+            className={styles.p_N_button}
+            onClick={handleNextPage} disabled={currentPage === totalPages}>
+            <h4>Next</h4>
           </button>
         </div>
       </div>
       <div className={styles.child_end}>
-        <h1>
-          hello im filtered page
+        <h1 className={styles.child_heading}>
+          hello im Filtered page - Filter  Section
         </h1>
       </div>
     </div>

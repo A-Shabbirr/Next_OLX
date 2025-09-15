@@ -22,8 +22,8 @@
     width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
+    /* align-items: center; */
     /* background-color: yellow; */
 }
 
@@ -89,7 +89,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 35%;
+    width: 45%;
     /* background-color: greenyellow; */
 }
 
@@ -97,7 +97,8 @@
     border-radius: 5px;
     height: 40px;
     width: 100px;
-    background-color: rgb(39, 38, 38);
+    background-color: rgb(31, 30, 30);
+    color: white;
 }
 
 .call {
@@ -133,4 +134,275 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+}
+
+.pagination {
+    /* background-color: black; */
+    margin-top: 50px;
+    height: 50px;
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p_B_button {
+    height: 70%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 70px;
+    background-color: rgb(245, 0, 0);
+}
+
+.p_N_button {
+    border: 1px solid grey;
+    width: 70px;
+    height: 70%;
+    border-radius: 5px;
+    background-color: rgb(45, 45, 253);
+}
+
+.p_B_button:hover,
+.p_N_button:hover {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .PV {
+        margin: 0;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        /* background-color: red; */
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .child_top {
+        /* background-color: blueviolet; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .child_top_top {
+        /* background-color: blueviolet; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagination {
+        margin-top: 20px;
+        height: 40px;
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: yellow; */
+    }
+
+    .cat_tray {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .api_cat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: yellow; */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .api_ind {
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    .child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        /* background-color: green; */
+        padding: 5px 0px;
+        margin: 0;
+    }
+
+    .child_image {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+    .child_detail {
+        /* background-color: orange; */
+        width: 100%;
+        padding: 10px;
+    }
+
+    .desc {
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* gap: 20px; */
+    }
+
+    .child_end {
+        /* background-color: aqua; */
+        width: 100%;
+    }
+
+    .child_top_heading {
+        /* background-color: orange; */
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .child_heading {
+        width: 100%;
+        /* background-color: pink; */
+        font-size: 10px;
+    }
+
+    .h_title {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        /* background-color: red; */
+    }
+
+    .h_and_p,
+    .h_para {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .chatt_call {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        /* background-color: blue; */
+    }
+
+    .chat {
+        border-radius: 5px;
+        height: 40px;
+        width: 48%;
+        background-color: rgb(31, 29, 29);
+        border: 1px solid white;
+        color: white;
+    }
+
+    .call {
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 40px;
+        background-color: rgb(243, 236, 236);
+        width: 48%;
+    }
+
+    .h_desc {
+        display: none;
+        height: 0;
+    }
+
+    .h_and_p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+    .desc1 {
+        padding: 0;
+        margin: 0;
+        /* background-color: red; */
+    }
+
+    .desc3 {
+        padding: 0;
+        margin: 0;
+        /* background-color: salmon; */
+    }
+
+    .desc2 {
+        padding: 0;
+        margin: 0;
+        /* background-color: rebeccapurple; */
+    }
+
+    .heart_cat {
+        /* width: 100%; */
+        /* background-color: red; */
+        position: relative;
+        top: 58px;
+        left: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+    .p_B_button {
+        height: 70%;
+        border-radius: 5px;
+        border: 1px solid white;
+        color: white;
+        width: 70px;
+        background-color: rgb(245, 0, 0);
+        font-size: 10px;
+    }
+
+    .p_N_button {
+        border: 1px solid white;
+        color: white;
+        font-size: 10px;
+        width: 70px;
+        height: 70%;
+        border-radius: 5px;
+        background-color: rgb(45, 45, 253);
+    }
+
+    .pages_number {
+        background-color: yellow;
+        font-size: 15px;
+        height: 50px;
+        width: 50px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+    }
+
 }

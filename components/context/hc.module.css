@@ -103,3 +103,9 @@
     top: 280px;
     right: -120px;
 }
+
+@media (max-width: 480px) {
+    .page {
+        display: none;
+    }
+}

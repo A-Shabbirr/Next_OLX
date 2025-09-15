@@ -1,12 +1,32 @@
 'use client'
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import React from 'react';
 import styles from "@/components/Navbar/Navbar.module.css";
 import { useRouter } from 'next/navigation';
 
-const searchbar = () => {
+const searchbar = ({ categoryArray }) => {
+    // console.log(categoryArray);
+
     const [searchTerm, setSearchTerm] = useState('');
+    const categoryProduct = categoryArray.map(item => item.title)
+    // console.log(categoryProduct);
+
+    const [product, setproduct] = useState(categoryProduct[0]);
+    // console.log(categoryProduct[0]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setproduct(prev => {
+                const currentIndex = categoryProduct.indexOf(prev)
+                const nextIndex = (currentIndex + 1) % categoryProduct.length
+
+                return categoryProduct[nextIndex]
+            })
+        }, 2000);
+        return () => clearInterval(interval)
+    }, []);
+
     const router = useRouter()
 
     const handleSearch = (e) => {
@@ -22,7 +42,7 @@ const searchbar = () => {
             <input
                 type="text"
                 className={styles.second_search}
-                placeholder="Search..."
+                placeholder={`\u{1F50D}  Search for ${product}`}
                 aria-label="Search"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
