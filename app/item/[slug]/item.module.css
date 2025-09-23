@@ -11,7 +11,7 @@
 }
 
 .item_div {
-    /* background-color: red; */
+    /* background-color: yellow; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -47,14 +47,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
+    overflow: hidden;
     border-radius: 10px;
+}
+
+.item_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .item_left_first {
     margin-top: 50px;
     margin-bottom: 10px;
     width: 100%;
-    /* background-color: yellow; */
+    /* background-color: red; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -78,12 +86,13 @@
 }
 
 .item_icon {
-    width: 10%;
+    width: 20%;
     /* background-color: blue; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /* align-items: center; */
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 10%;
 
 }
 
@@ -231,7 +240,7 @@
     /* height: 20px; */
     width: 100%;
     gap: 10px;
-    /* margin-left: 10px; */
+    margin-left: 10px;
     /* background-color: orange; */
 }
 
@@ -404,4 +413,154 @@
     margin-left: 100px;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.svg_item {
+    height: 35px;
+    width: 35px;
+    display: block;
+}
+
+.Sim_div_res {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .item_main {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .item_div {
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 40px;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .item_div_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        /* background-color: orange; */
+        width: 100%;
+    }
+
+    .item_div_left_image {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .item_img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .svg_item {
+        width: 40px;
+        height: 40px;
+        max-width: 50px;
+        display: block;
+    }
+
+    .item_d_details {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        border-radius: 10px;
+        border-top: 1px solid silver;
+        border-left: 1px solid silver;
+        border-right: 1px solid silver;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    .item_d_details_box {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        height: inherit;
+        gap: 0;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid silver;
+    }
+
+    .item_d_box1 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgb(245, 239, 239);
+        align-items: center;
+        padding: 10px;
+    }
+
+    .item_d__box {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        padding: 10px;
+        margin: 0;
+        font-weight: 600;
+        background-color: inherit;
+    }
+
+    .item_div_right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* align-items: center; */
+        /* background-color: yellow; */
+    }
+
+    .Details_API_rest_Button,
+    .API_ID {
+        display: none;
+    }
+
+    .Details_API_rest_ID {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 35px;
+        margin: 10px 0px;
+        border-radius: 5px;
+        background-color: rgb(223, 219, 219);
+    }
+
+    .Sim_div {
+        display: none;
+    }
+
+    .Sim_div_res {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        background-color: red;
+    }
 }

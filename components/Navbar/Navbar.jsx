@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { usePathname } from "next/navigation";
+import Body from "./components/Body";
 
 const Navbar = () => {
   const param = useParams()
@@ -169,7 +170,10 @@ const Navbar = () => {
       </div>
       <div className={styles.Navbar_bottom}>
         <div className={styles.nav_menu}>
-          <h6 className={styles.ac}>All Categories</h6>
+          <div className={styles.toggle}>
+            <h6 className={styles.ac}>All Categories</h6>
+            <Body />
+          </div>
           <div className={styles.content}>
             <p className={styles.p_ac}>
               <Link

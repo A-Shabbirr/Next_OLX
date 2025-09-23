@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: red; */
     /* align-items: flex-start; */
+
 }
 
 .navbar {
@@ -15,7 +15,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* background-color: red; */
     position: fixed;
     top: 0;
     z-index: 3;
@@ -38,8 +37,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 10%;
     width: 25%;
-    /* background-color: yellow; */
 }
 
 .login {
@@ -48,7 +47,7 @@
     justify-content: space-between;
     align-items: center;
     width: 25%;
-    /* background-color: red; */
+    gap: 5%;
 }
 
 .olx_heading {
@@ -62,7 +61,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background-color: yellow; */
 }
 
 .motor_heading,
@@ -104,7 +102,6 @@
 }
 
 .searchbox {
-    /* background-color: yellow; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -116,7 +113,6 @@
 }
 
 .first {
-    /* background-color: greenyellow; */
     width: 30%;
     display: flex;
     flex-direction: row;
@@ -128,7 +124,6 @@
 }
 
 .second {
-    /* background-color: greenyellow; */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -153,7 +148,6 @@
 .first_search::placeholder {
     font-style: 20px;
     height: 100%;
-    /* background-color: red; */
 }
 
 .second_search {
@@ -223,18 +217,20 @@
     margin-top: 130px;
     /* position: relative; */
     /* top: 150px; */
+    ;
 }
 
-.nav_image {
-    /* background-color: red; */
-    margin-top: 10px;
-    width: 90%;
-    height: 180px;
-    border-radius: 10px;
+.toggle {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    /* gap: 20px; */
 }
 
+
 .nav_image {
-    /* background-color: red; */
     margin-top: 10px;
     width: 90%;
     height: 180px;
@@ -244,7 +240,6 @@
 }
 
 .image {
-    border-radius: 5px;
     position: absolute;
     top: 0;
     left: 0;
@@ -267,7 +262,7 @@
 
 @keyframes slideInRight {
     from {
-        left: 100%;
+        right: 100%;
     }
 
     to {
@@ -277,24 +272,22 @@
 
 @keyframes slideOutLeft {
     from {
-        left: 0;
+        left: 100%;
     }
 
     to {
-        left: -100%;
+        right: 0%;
     }
 }
 
 .nav_cat {
     width: 100%;
-    padding: 10px;
     margin: 10px;
     height: 100%;
-    gap: 30px;
-    /* background-color: red; */
+    gap: 10px;
     display: grid;
     padding: 20px;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
 }
 
 .cat_icon_div {
@@ -302,7 +295,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: yellow; */
     height: 100px;
     width: 100px;
     border-radius: 10px;
@@ -331,23 +323,23 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    /* align-items: center; */
-    /* background-color: red; */
+    align-items: center;
     width: 100%;
+    gap: 5%;
+    height: 30px;
 }
 
 .content {
     width: 60%;
-    /* background-color: yellow; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 5%;
 
 }
 
 .ac {
-    margin-right: 20px;
     font-size: 18px;
     font-weight: 700;
 }
@@ -359,10 +351,10 @@
 }
 
 .github_signin {
-    width: 90px;
+    width: 30%;
     height: 40px;
     background-color: rgb(62, 62, 247);
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     color: white;
     cursor: pointer;
@@ -383,17 +375,93 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* background-color: red; */
     width: 65%;
 }
 
 .search_updated {
     width: 100%;
-    /* background-color: yellow; */
 }
 
 .fav {
     display: none;
+}
+
+.Body {
+    width: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.VL {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.active {
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 10px;
+    transform: rotate(180deg);
+    /* Use transform for more consistent rotation */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.not_active {
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 10px;
+    transform: rotate(0deg);
+    /* Use transform for more consistent rotation */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.list_div {
+    display: none;
+}
+
+.list_div_toggle {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    width: 98%;
+    height: 200px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3),
+        0 4px 8px rgba(60, 64, 67, 0.15);
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    z-index: 2;
+}
+
+.Item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    /* background-color: red; */
+    padding: 2px;
+    gap: 5px;
+}
+
+.HI {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.link_div {
+    font-size: 14px;
+    font-weight: 500;
+    color: #575151;
 }
 
 @media (max-width: 480px) {
@@ -403,7 +471,6 @@
         -webkit-overflow-scrolling: touch;
         padding: 10px;
         gap: 10px;
-        /* background-color: red; */
         height: 220px;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -417,8 +484,6 @@
     .cat_icon_div {
         width: 100%;
         height: 100px;
-        /* background-color: yellow; */
-        /* background-color: #f0f0f0; */
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -433,7 +498,6 @@
         height: 60px;
         object-fit: contain;
         margin-bottom: 5px;
-        /* background-color: pink; */
     }
 
     .icon_para {
@@ -441,7 +505,6 @@
         font-weight: 500;
         text-align: center;
         max-width: 80px;
-        /* background-color: red; */
     }
 
     /* Hide scrollbar (optional) */
@@ -478,7 +541,6 @@
     }
 
     .olx {
-        /* background-color: red; */
         background-color: rgb(37, 37, 37);
         width: 31.5%;
         border-radius: 5px;
@@ -528,7 +590,6 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        /* background-color: red; */
 
     }
 
@@ -538,7 +599,6 @@
 
     .searchbox {
         width: 100%;
-        /* background-color: red; */
         display: flex;
         padding: 0px 10px;
         margin: 0;
@@ -549,7 +609,6 @@
     }
 
     .second {
-        /* background-color: yellow; */
         padding: 0;
         margin: 0;
         height: 35px;
@@ -571,7 +630,6 @@
     }
 
     .search_fav {
-        /* background-color: yellow; */
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -611,7 +669,6 @@
 
     .first_search::placeholder {
         padding: 0;
-        /* background-color: red; */
         padding-left: 5px;
         /* margin: 0; */
         width: 100%;

@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +12,6 @@
 .api {
     width: 100%;
     margin: 10px;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +24,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: greenyellow; */
 }
 
 .vm_heading {
@@ -49,9 +46,28 @@
     flex-direction: row;
     justify-content: flex-start;
     /* align-items: center; */
-    /* background-color: red; */
     margin: 10px;
     width: 100%;
+}
+
+.api_image {
+    /* background-color: blueviolet; */
+    width: 100%;
+    /* Ensure the container fills the available width */
+    max-width: 100%;
+    /* Prevent it from exceeding the parent's width */
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image_res {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .api_list {
@@ -85,8 +101,6 @@
 
 .api_rating2 {
     color: gray;
-    /* margin-top: 10px; */
-    font-size: 14px;
 }
 
 .p_heart {

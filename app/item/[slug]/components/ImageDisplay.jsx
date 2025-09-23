@@ -1,11 +1,11 @@
 'use client';
-
+import styles from "../item.module.css";
 import Image from 'next/image';
 import React, { useState } from 'react';
 
 
 const ImageDisplay = ({ images }) => {
-    console.log(images);
+    // console.log(images);
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -16,6 +16,7 @@ const ImageDisplay = ({ images }) => {
     return (
         <div>
             <Image
+                className={styles.item_img}
                 loading='lazy'
                 src={images[currentIndex]}
                 alt={`Image ${currentIndex + 1}`}
