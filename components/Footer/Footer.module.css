@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
 }
 
 .bottom_PC {
@@ -219,17 +220,19 @@
 
 @media (max-width: 480px) {
 
-    .bottom_heading5,
-    .bottom_heading1 {
-        display: none;
-    }
-
     .footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100%;
     }
+
+    .bottom_heading5,
+    .bottom_heading1 {
+        display: none;
+    }
+
 
     .footer_mid {
         display: none;
@@ -278,6 +281,7 @@
         width: 100%;
         height: 100px;
         padding-top: 10px;
+        margin-bottom: 70px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -602,20 +606,54 @@
     }
 
     .footer_res {
+        position: fixed;
+        bottom: 0px;
         background-color: white;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         padding: 10px;
         border: none;
     }
 
-    .button_res {
+    .footer_res_Home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .footer_p_heading {
+        font-size: 12px;
+    }
+
+    .sell_F {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 15%;
+        border-radius: 25px;
+        border: 3px solid black;
+    }
+
+    .sell_heading {
+        font-size: 18px;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+    .button_res_call {
         width: 100%;
         background-color: inherit;
         display: flex;
+        height: 100%;
+        border: none;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -625,24 +663,26 @@
 
     .call_button {
         width: 40%;
-        height: 25px;
+        height: 35px;
         background-color: black;
         border-radius: 5px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        gap: 5%;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
     }
 
     .chat_button {
+        gap: 5%;
         width: 40%;
         border-radius: 5px;
         border: 1px solid black;
-        height: 25px;
+        height: 35px;
         background-color: white;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
     }
 

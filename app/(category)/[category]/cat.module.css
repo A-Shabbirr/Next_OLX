@@ -38,7 +38,7 @@
 }
 
 .child_image_src {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
 }
 
@@ -99,7 +99,6 @@
     align-items: center;
     width: 100%;
     gap: 7%;
-    /* background-color: greenyellow; */
 }
 
 .chat {

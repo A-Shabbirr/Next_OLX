@@ -282,41 +282,44 @@ const Footer = () => {
       </div>
       <div className={styles.footer_res}>
         {isHomePage ? (
-          <>
+          <div className={styles.footer_res_Home}>
             <div className={styles.footer_res_item}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+                width="25" height="25"
+              >
                 <path d="M341.8 72.6C329.5 61.2 310.5 61.2 298.3 72.6L74.3 280.6C64.7 289.6 61.5 303.5 66.3 315.7C71.1 327.9 82.8 336 96 336L112 336L112 512C112 547.3 140.7 576 176 576L464 576C499.3 576 528 547.3 528 512L528 336L544 336C557.2 336 569 327.9 573.8 315.7C578.6 303.5 575.4 289.5 565.8 280.6L341.8 72.6zM264 320C264 289.1 289.1 264 320 264C350.9 264 376 289.1 376 320C376 350.9 350.9 376 320 376C289.1 376 264 350.9 264 320zM208 496C208 451.8 243.8 416 288 416L352 416C396.2 416 432 451.8 432 496C432 504.8 424.8 512 416 512L224 512C215.2 512 208 504.8 208 496z" />
               </svg>
-              <p>Home</p>
+              <p className={styles.footer_p_heading}>Home</p>
             </div>
-
             <div className={styles.footer_res_item}>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"
+                width="25" height="25">
                 <path d="M108.2 322.7C114.3 307.5 112.2 290.1 102.6 276.8C88.1 256.7 80 233.1 80 208C80 141.2 140.5 80 224 80C307.5 80 368 141.2 368 208C368 274.8 307.5 336 224 336C208.1 336 192.9 333.7 178.7 329.5C168.4 326.4 157.3 327 147.3 331L96.9 351.2L108.3 322.7zM32 208C32 243.8 43.6 277.1 63.7 304.8L33.9 379.2C32.6 382.4 32 385.8 32 389.2C32 404 44 416 58.8 416C62.2 416 65.6 415.3 68.8 414.1L165.1 375.6C183.7 381.1 203.5 384 224 384C330 384 416 305.2 416 208C416 110.8 330 32 224 32C118 32 32 110.8 32 208zM416 576C436.6 576 456.3 573 474.9 567.6L571.2 606.1C574.4 607.4 577.8 608 581.2 608C596 608 608 596 608 581.2C608 577.8 607.3 574.4 606.1 571.2L576.4 496.8C596.4 469 608.1 435.7 608.1 400C608.1 317.6 546.4 248.5 463.1 229.3C461.5 245.6 458 261.2 453 276.2C516.9 291 560.2 343.5 560.2 400.1C560.2 425.2 552.1 448.8 537.6 468.9C528 482.2 525.9 499.5 532 514.8L543.4 543.3L493 523.1C483 519.1 471.9 518.6 461.6 521.6C447.4 525.8 432.2 528.1 416.3 528.1C344.1 528.1 289.2 482.4 275.6 426.9C260 430.1 243.9 431.9 227.5 432.1C243.9 514 322.2 576.1 416.3 576.1z" />
               </svg>
-              <p>Chat</p>
+              <p className={styles.footer_p_heading}>Chat</p>
             </div>
-
-            <div className={styles.sell}>
+            <div className={styles.sell_F}>
               <h5 className={styles.sell_heading}>Sell</h5>
             </div>
-
             <div className={styles.footer_res_item}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 640 640">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width="25" height="25"
+                viewBox="0 0 640 640">
                 <path d="M128 192C110.3 192 96 206.3 96 224C96 241.7 110.3 256 128 256L512 256C529.7 256 544 241.7 544 224C544 206.3 529.7 192 512 192L128 192zM128 384C110.3 384 96 398.3 96 416C96 433.7 110.3 448 128 448L512 448C529.7 448 544 433.7 544 416C544 398.3 529.7 384 512 384L128 384z" />
               </svg>
-              <p>My Ads</p>
+              <p className={styles.footer_p_heading}>My Ads</p>
             </div>
-
             <div className={styles.footer_res_item}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 640 640">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                width="25" height="25"
+                viewBox="0 0 640 640">
                 <path d="M224 192C224 139 267 96 320 96C373 96 416 139 416 192C416 245 373 288 320 288C267 288 224 245 224 192zM448 192C448 121.3 390.7 64 320 64C249.3 64 192 121.3 192 192C192 262.7 249.3 320 320 320C390.7 320 448 262.7 448 192zM128 544C128 464.5 192.5 400 272 400L368 400C447.5 400 512 464.5 512 544L512 560C512 568.8 519.2 576 528 576C536.8 576 544 568.8 544 560L544 544C544 446.8 465.2 368 368 368L272 368C174.8 368 96 446.8 96 544L96 560C96 568.8 103.2 576 112 576C120.8 576 128 568.8 128 560L128 544z" />
               </svg>
-              <p>Account</p>
+              <p className={styles.footer_p_heading}>Account</p>
             </div>
-          </>
+          </div>
         ) : isItemPage ? (
-          <div className={styles.button_res}>
+          <div className={styles.button_res_call}>
             <button className={styles.call_button}>
               <svg xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -337,7 +340,7 @@ const Footer = () => {
           </div>
         ) : isCategoryPage ? (
           <>
-            <div className={styles.sell}>
+            <div className={styles.sell_F}>
               <h5 className={styles.sell_heading}>Sell</h5>
             </div>
           </>
