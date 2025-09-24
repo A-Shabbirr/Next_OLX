@@ -1,6 +1,6 @@
 'use client';
 
-import LoginF from '@/Footer/component/LoginF';
+import LoginF from '@/components/Footer/component/LoginF';
 
 export default function page() {
     return (
