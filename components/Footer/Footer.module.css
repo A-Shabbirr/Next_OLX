@@ -693,4 +693,55 @@
     .call_Button_heading {
         color: white;
     }
+
+    .github_signin {
+        background-color: rgb(62, 62, 247);
+        width: 100%;
+        color: white;
+        border-radius: 5px;
+        margin: 5px 0px;
+        height: 40px;
+    }
+
+    .ID_PW {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .Acc_heading {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .div_U,
+    .div_P {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5%;
+    }
+
+    .U_heading,
+    .P_heading {
+        font-size: 18px;
+        font-weight: 500;
+        width: 100px;
+    }
+
+    .PW,
+    .ID {
+        width: 100%;
+        height: 25px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid black;
+        padding-left: 10px;
+    }
+
 }

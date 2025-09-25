@@ -22,10 +22,16 @@ export default function Component() {
             <button className={styles.github_signin} onClick={() => signIn('google')}>Sign in with Google</button>
             <br />
             <h6>Or</h6>
-            <div>
-                <h6>Create an Account</h6>
-                <input></input>
-                <input></input>
+            <div className={styles.ID_PW}>
+                <h6 className={styles.Acc_heading}>Create an Account</h6>
+                <div className={styles.div_U}>
+                    <p className={styles.U_heading}>Username:</p>
+                    <input placeholder="i.e. Jason@olx.com" className={styles.ID}></input>
+                </div>
+                <div className={styles.div_P}>
+                    <p className={styles.P_heading}>Password:</p>
+                    <input placeholder="Should be Strong" type="password" className={styles.PW}></input>
+                </div>
             </div>
         </>
     )
