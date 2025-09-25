@@ -621,9 +621,10 @@
     .footer_res_Home {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
+        gap: 20%;
 
     }
 
@@ -742,14 +743,17 @@
         border: none;
         border-bottom: 1px solid black;
         padding-left: 10px;
+
     }
 
     .After_login {
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
+        width: 100%;
     }
 
     .github {
@@ -760,6 +764,7 @@
     }
 
     .github_signout {
+
         width: 100%;
         color: white;
         border-radius: 5px;
