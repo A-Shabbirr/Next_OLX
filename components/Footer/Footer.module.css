@@ -744,4 +744,27 @@
         padding-left: 10px;
     }
 
+    .After_login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .github {
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+
+    .github_signout {
+        width: 100%;
+        color: white;
+        border-radius: 5px;
+        margin: 5px 0px;
+        height: 40px;
+        background-color: red;
+    }
 }

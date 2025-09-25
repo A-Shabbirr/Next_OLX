@@ -10,8 +10,10 @@ export default function Component() {
         return (
             <>
                 {session.user.name} <br />
-                <Image className={styles.github} src={session.user.image} width={25} height={25} alt="description"></Image>
-                <button className={styles.github_signout} onClick={() => signOut()}>Sign out</button>
+                <div className={styles.After_login}>
+                    <Image className={styles.github} src={session.user.image} width={25} height={25} alt="description"></Image>
+                    <button className={styles.github_signout} onClick={() => signOut()}>Sign out</button>
+                </div>
             </>
         )
     }
